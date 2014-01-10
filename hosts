@@ -1,0 +1,10 @@
+#Sample inventory
+#
+# Replace memcached-1 and memcached-2 with hostnames of servers
+
+[memcached-dev]
+ec2-user@memcached-1 cache_size=1024
+ec2-user@memcached-2 cache_size=1024
+
+
+

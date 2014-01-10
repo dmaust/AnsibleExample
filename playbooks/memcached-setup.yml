@@ -1,0 +1,12 @@
+---
+
+-  hosts: memcached-dev
+   tasks:
+        - name: install memcached
+          yum: name=memcached state=latest
+
+        - name: configure memcached
+          template: src=templates/memcached-config.j2 dest=/etc/sysconfig/memcached owner=root group=root mode=644 backup=true
+
+        - name: start memcached
+          service: name=memcached state=started enabled=yes
