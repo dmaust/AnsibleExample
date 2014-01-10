@@ -1,10 +1,12 @@
-#Sample inventory
+# Sample inventory
 #
 # Replace memcached-1 and memcached-2 with hostnames of servers
+# SSH access must be provided to each of the systems, 
+# and sudo must be permitted to root without a password.
 
 [memcached-dev]
-ec2-user@memcached-1 cache_size=1024
-ec2-user@memcached-2 cache_size=1024
+username@memcached-1 cache_size=1024
+username@memcached-2 cache_size=1024
 
 
 

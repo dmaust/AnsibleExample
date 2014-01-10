@@ -1,6 +1,8 @@
 ---
 
 -  hosts: memcached-dev
+   sudo: yes
+   gather_facts: no
    tasks:
         - name: install memcached
           yum: name=memcached state=latest

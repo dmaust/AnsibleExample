@@ -9,8 +9,8 @@ Use the following to execute the changes.
 
 Install ansible using python pip with `pip install ansible`.
 
-Once ansible is installed, servers may be provisioned using the following command
+Once ansible is installed, servers may be provisioned using the following command:
 
 ```
-ansible-playbook -i hosts -s playbooks/memcached-setup.yml
+ansible-playbook -i hosts playbooks/memcached-setup.yml
 ```
