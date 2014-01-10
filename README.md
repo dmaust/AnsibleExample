@@ -7,8 +7,10 @@ With this example only rpm based systems containing a "memcached" package in the
 
 Use the following to execute the changes.
 
-Install ansible with `pip install ansible` and then execute the changes with the following.
+Install ansible using python pip with `pip install ansible`.
+
+Once ansible is installed, servers may be provisioned using the following command
 
 ```
-ansible-playbook -i hosts playbooks/memcached-setup.yml
+ansible-playbook -i hosts -s playbooks/memcached-setup.yml
 ```
